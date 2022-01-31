@@ -1,0 +1,7 @@
+.header {
+    &__wrapper {
+        @include flex-all-sb;
+        margin: 32px 0;
+        position: relative;
+    }
+}

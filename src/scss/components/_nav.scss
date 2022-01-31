@@ -1,0 +1,25 @@
+.nav {
+    &__list {
+        @include flex-all-center;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        padding: 0 20px;
+    }
+    &__link {
+        color: var(--color-black);
+        font-weight: 700;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        padding: 1px;
+        text-align: center;
+        line-height: 1.4;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
