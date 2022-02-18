@@ -19,7 +19,7 @@ const image = require('gulp-imagemin');
 const { readFileSync } = require('fs');
 const concat = require('gulp-concat');
 
-let isProd = false; // dev by default
+let isProd = true; // dev by default
 
 const clean = () => {
 	return del(['app/*'])
