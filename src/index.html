@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  @include('partials/head.html', {
+    'title': 'Home Page',
+    'description': 'Description main'
+  })
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>Hero Section</title>
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <div class="wrapper">
-    @include('partials/header.html')
-    <main class="main">
-     
-    </main>
-  </div>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+  <body>
+    <div class="wrapper">
+      @include('partials/header.html')
+      <main class="main">example</main>
+      @include('partials/footer.html')
+    </div>
+    <!-- @include('html/example.html') example include -->
+  </body>
 </html>

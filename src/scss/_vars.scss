@@ -1,4 +1,11 @@
 :root {
+  // base
+  --font-family: "Open Sans", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  //color
   --color-black: #000;
   --color-white: #fff;
   --color-primary: red;
