@@ -134,6 +134,12 @@ Also, don't forget to write the same fonts in `<link preload>` in html.
 Put any images other than the __favicon__ in the __img__ folder.
 
 If you need to make an svg sprite, put the svg files you need for the sprite in the __img/svg__ folder. At the same time, such attributes as fill, stroke, style will be automatically deleted. Other svg files just leave in the __img__ folder.
+html output svg file, example:
+```
+<svg class="icon icon-example">
+  <use xlink:href="img/sprite.svg#(name file)"></use>
+</svg>
+```
 
 When using the `gulp build` command, you will get minified images in the resulting __img__ folder.
 
