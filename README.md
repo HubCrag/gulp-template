@@ -142,6 +142,13 @@ Html output svg file, example:
 </svg>
 ```
 
+Css output svg file, example:
+```
+.example {
+  background-image: url(../img/sprite.svg#(name file));
+}
+```
+
 When using the `gulp build` command, you will get minified images in the resulting __img__ folder.
 
 Support for __webp__ and __avif__ formats is available in the assembly. You can connect them using the `picture` tag. For background, you can use regular __jpg__ or __png__, or use `image-set` where possible.
