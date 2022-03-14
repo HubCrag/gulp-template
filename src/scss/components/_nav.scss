@@ -1,0 +1,48 @@
+.nav {
+    @include m {
+      order: 2;
+      display: block;
+      width: 100%;
+      padding: 0; // 30px
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      &.is-active {
+        padding: 30px 0;
+        max-height: 15rem;
+      }
+    }
+  
+    &__list {
+      @include flex-v-center;
+      @include m {
+        display: block;
+      }
+    }
+    &__item {
+      position: relative;
+      &:not(:last-of-type) {
+        margin-right: 35px;
+        @include n {
+          margin-right: 22px;
+        }
+      }
+      @include m {
+        margin-right: 0;
+        margin-bottom: 22px;
+      }
+    }
+    &__link {
+      color: var(--color-dark);
+      font-size: 18px;
+      font-weight: 400;
+      position: relative;
+      &:hover {
+        color: var(--color-text);
+      }
+      &.is-active {
+        color: var(--color-text);
+      }
+    }
+  }
+  

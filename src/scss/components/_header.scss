@@ -1,0 +1,13 @@
+.header {
+    &__wrapper {
+      @include flex-all-sb;
+      padding: 20px 0;
+      @include m {
+        flex-wrap: wrap;
+      }
+      .burger {
+        @include burger;
+      }
+    }
+  }
+  
