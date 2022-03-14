@@ -4,12 +4,12 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-$title = "Тема письма";
+$title = "Subject";
 $file = $_FILES['file'];
 
 $c = true;
 
-$title = "Заголовок письма";
+$title = "Title";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
